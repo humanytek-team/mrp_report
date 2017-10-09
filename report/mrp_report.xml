@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+            id="mrp_drall_report"
+            string="Drall"
+            model="mrp.production"
+            report_type="qweb-pdf"
+            file="mrp_report.mrp_drall_report2"
+            name="mrp_report.mrp_drall_report2"
+        />
+    </data>
+</odoo>
