@@ -3,7 +3,7 @@
     <data>
         <report
             id="mrp_drall_report"
-            string="Drall"
+            string="Reporte Orden de trabajo"
             model="mrp.production"
             report_type="qweb-pdf"
             file="mrp_report.mrp_drall_report2"

@@ -33,7 +33,8 @@
     'depends': ['mrp', 'sale'],
     'data': [
         'report/mrp_report.xml',
-        'report/mrp_report_templates.xml'
+        'report/mrp_report_templates.xml',
+        'data/mrp_report_data.xml'
     ],
     'demo': [
     ],

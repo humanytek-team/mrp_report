@@ -22,11 +22,15 @@
                         <thead>
                             <tr>
                                 <th><strong>Orden de Producción</strong></th>
-                                <th class="text-right"><strong>Código del Producto</strong></th>
-                                <th class="text-right"><strong>Producto</strong></th>
-                                <th class="text-right"><strong>Cantidad</strong></th>
+                                <th class="text-center"><strong>Código del Producto</strong></th>
+                                <th class="text-center"><strong>Producto</strong></th>
+                                <th class="text-center"><strong>Observación</strong></th>
+                                <th class="text-center"><strong>Cantidad</strong></th>
                                 <th class="text-center" >
                                     <strong>Cliente</strong>
+                                </th>
+                                <th class="text-center" >
+                                    <strong>Fecha Vigente</strong>
                                 </th>
                                 <th class="text-center" >
                                     <strong>Prioridad</strong>
@@ -34,7 +38,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr t-foreach="docs" t-as="o">
+                            <tr t-foreach="docs" t-as="o" >
                                 <td>
                                     <span t-field="o.name"/>
                                 </td>
@@ -45,10 +49,16 @@
                                     <span t-field="o.product_id.name"/>
                                 </td>
                                 <td>
+                                    <span t-field="o.sale_line_observation"/>
+                                </td>
+                                <td>
                                     <span t-field="o.product_qty"/>
                                 </td>
                                 <td>
                                     <span t-field="o.partner_id.name"/>
+                                </td>
+                                <td>
+                                    <span t-field="o.date_planned_start"/>
                                 </td>
                                 <td>
                                     <span t-field="o.sale_type_id"/>
