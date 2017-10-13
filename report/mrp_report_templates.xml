@@ -38,7 +38,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr t-foreach="docs" t-as="o" >
+                            <tr t-foreach="docs.sorted(key=lambda x: x.type_priority)" t-as="o" >
                                 <td>
                                     <span t-field="o.name"/>
                                 </td>

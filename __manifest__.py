@@ -30,7 +30,7 @@
     'website': "http://www.humanytek.com",
     'category': 'Manufacturing',
     'version': '1.0.0',
-    'depends': ['mrp', 'sale'],
+    'depends': ['mrp', 'sale', 'sale_order_observation'],
     'data': [
         'report/mrp_report.xml',
         'report/mrp_report_templates.xml',
